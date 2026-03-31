@@ -160,6 +160,7 @@ function navigate(page) {
   if (page === 'chat') loadTrending();
   if (page === 'ghl') loadGHL();
   if (page === 'finance') loadFinance();
+  if (page === 'realestate') loadRealEstate();
   if (page === 'cards') initCards();
   if (page === 'career') initCareer();
   if (page === 'creative') initCreative();
@@ -386,6 +387,8 @@ document.addEventListener('keydown', (e) => {
 if (typeof loadTrending !== 'function') window.loadTrending = () => {};
 if (typeof loadGHL !== 'function') window.loadGHL = () => {};
 if (typeof loadFinance !== 'function') window.loadFinance = () => {};
+if (typeof loadRealEstate !== 'function') window.loadRealEstate = () => {};
+if (typeof initRealestate !== 'function') window.initRealestate = () => {};
 if (typeof initCards !== 'function') window.initCards = () => {};
 if (typeof initCareer !== 'function') window.initCareer = () => {};
 if (typeof initCreative !== 'function') window.initCreative = () => {};

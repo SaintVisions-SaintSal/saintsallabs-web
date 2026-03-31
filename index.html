@@ -499,8 +499,9 @@
   </main>
 </div>
 
-<!-- Scripts -->
+<!-- Scripts — load order matters: app.js first (defines globals), then feature modules -->
 <script src="/app.js"></script>
+<script src="/hq.js"></script>
 <script src="/chat.js"></script>
 <script src="/builder.js"></script>
 <script src="/career.js"></script>
